@@ -7,4 +7,96 @@ html {
 /* Khôi phục lại cỡ chữ mặc định theo rem */
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ==///////////====common======= */
+/* Bỏ gạch chân cho thẻ a */
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  max-width: calc(100% - 48px);
+  height: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  display: block;
+  min-width: 118px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  background-color: #171100;
+  padding: 0px 16px;
+  border-radius: 24.5px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+/* =========style header============== */
+.header {
+  /* background: #fffcf4; */
+  background: turquoise;
+  height: 94px;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+.header .body {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.header .nav {
+  margin-left: auto;
+  .nav {
+    margin-left: auto;
+  }
+}
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  color: #5f5b53;
+
+  padding: 8px 21px;
+
+  font-size: 1.6rem;
+  position: relative;
+}
+/* tạo lớp giả horver */
+.nav li.active a,
+.nav a:hover {
+  color: #171100;
+  font-size: 1.6rem;
+  text-shadow: 1px 0 0 currentColor;
+  /* font-weight: 600; */
+}
+
+/* tạo gạch chân dưới */
+.nav li.active a::after {
+}
+.nav li.active ::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  left: 21px;
+  bottom: 6px;
+
+  border-radius: 1px;
+  background: #171100;
+}
+.header .btn_sign_up {
+  min-width: 144px;
+}
+
+.header .action {
+  margin-left: 49px;
 }
